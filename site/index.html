@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <h1><center>BigchainDB Querypoint For Unergia</center></h1>
+    </head>
+    <body>
+        <center>
+            <bold>Enter The UniqueID or the TxnID of the Solar Panel Group:</bold><br><br>
+            <input type='text' id='asset'><br><br>
+            <button onclick="assetQuery()">Verify Values</button>
+        </center>
+
+        <script>
+            function assetQuery(){
+                var id = document.getElementById("asset").value;
+                window.location = `/id/${id}`;
+            };
+        </script>
+    </body>
+</html>
